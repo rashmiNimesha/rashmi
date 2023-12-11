@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" type="text/css" href="css/product.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/product.js" async></script>
+</head>
+<body>
+    <header>
+        <img class="home-logo-img" src="images/LOGOEdited.png" alt="HomePageLogo" > 
+         <div class="homeLogo">Rackets Asia</div>
+         <div class="mainLine">
+             <div class="line"></div>
+             <div class="line"></div>
+             <div class="line"></div>
+         </div>
+         <nav class="navigation-bar">
+         <ul>
+             <li><a class = "activeTab" href="#">Home</a></li>
+             <li><a href="#">Presentation</a></li>
+             <li><a href="#">Products</a></li>
+             <li><a href="#">Content</a></li>
+             <li><a href="#">Sitemap</a></li>
+             <li><a href="#">Quiz</a></li>
+             <li><a href="#">Gallery</a></li>
+             <li><a href="#">Student Details</a></li>
+             <li><a href="#">Comments</a></li>
+         </ul>         
+         </nav>
+     </header>
+
+     <script>
+        mainLine = document.querySelector(".mainLine");
+        mainLine.onclick = function(){
+            navBar = document.querySelector("nav");
+            navBar.classList.toggle("active");
+        }
+
+    </script>
+
+    <h2 class="section-header">Products</h2>
+    <button class="btn cart-button" type="button" onclick="document.location='#cart'">Go to Cart</button>
+    <section class="container content-section">
+        <div class="items">
+            <div class="item">
+                <span class="item-title">Badminton Racket</span>
+                <img class="item-image" src="images/badmintonRacket.jpg" alt="">
+                <div class="item-details">
+                    <span class="item-price">Rs.12500</span>
+                    <button class="btn item-button" type="button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <span class="item-title">Tennis Racket</span>
+                <img class="item-image" src="images/tennisRacket.jpg" alt="">
+                <div class="item-details">
+                    <span class="item-price">Rs.15600</span>
+                    <button class="btn item-button" type="button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <span class="item-title">Squash Racket</span>
+                <img class="item-image" src="images/squashRacket.jpg" alt="">
+                <div class="item-details">
+                    <span class="item-price">Rs.13000</span>
+                    <button class="btn item-button" type="button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <span class="item-title">Table Tennis Racket</span>
+                <img class="item-image" src="images/ttRacket.jpg" alt="">
+                <div class="item-details">
+                    <span class="item-price">Rs.10300</span>
+                    <button class="btn item-button" type="button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <span class="item-title">Shuttlecock Barrel</span>
+                <img class="item-image" src="images/shuttlecock.jpg" alt="">
+                <div class="item-details">
+                    <span class="item-price">Rs.5100</span>
+                    <button class="btn item-button" type="button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <span class="item-title">Tennis Balls Set</span>
+                <img class="item-image" src="images/tennisBalls.jpg" alt="">
+                <div class="item-details">
+                    <span class="item-price">Rs.3180</span>
+                    <button class="btn item-button" type="button">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cart" class="container content-section">
+        <h2 class="section-header">Cart</h2>
+        <div class="cart-row">
+            <span class="cart-header cart-column cart-item">Item</span>
+            <span class="cart-header cart-column cart-price">Price</span>
+            <span class="cart-header cart-column cart-quantity">Quantity</span>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+            <strong class="total-title">Total</strong>
+            <span class="total-price">Rs.0</span>
+        </div>
+        <button class="btn btn-checkout" type="button">Checkout</button>
+    </section>
+    <footer>
+        <div><a href="PageEditor.html" target="_blank">Page Editor</a></div>
+    </footer>
+</body>
+</html>

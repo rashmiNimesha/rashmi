@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/checkout.css">
+    <script src="js/checkout.js" async></script>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">billing address</h3>
+                    <div class="inputbox">
+                        <span>full name:</span>
+                        <input type="text" class="fullName" placeholder="Dulami Kaludewa">
+                    </div>
+                    <div class="inputbox">
+                        <span>email:</span>
+                        <input type="email" class="email" placeholder="dulami@gmail.com">
+                    </div>
+                    <div class="inputbox">
+                        <span>address:</span>
+                        <input type="text" class="address" placeholder="StreetNumber, StreetAddress">
+                    </div>
+                    <div class="inputbox">
+                        <span>city:</span>
+                        <input type="text" class="city" placeholder="Colombo">
+                    </div>
+                    <div class="inputbox">
+                        <span>province:</span>
+                        <input type="text" class="province" placeholder="Western province">
+                    </div>
+                    <div class="flex">
+                        <div class="inputbox">
+                            <span>postal code:</span>
+                            <input type="number" class="postalCode" placeholder="12345">
+                        </div>
+                        <div class="inputbox">
+                            <span>country:</span>
+                            <input type="text" class="country" placeholder="Sri Lanka">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3 class="title">payment</h3>
+                    <div class="inputbox">
+                        <span>total:</span>
+                        <p id="total-value"></p>
+                    </div>
+                    <div class="inputbox">
+                        <span>cards accepted:</span>
+                        <img src="images/cards.jpg" alt="">
+                    </div>
+                    <div class="inputbox">
+                        <span>card holder's name:</span>
+                        <input type="text" class="cardName" placeholder="D A Kaludewa">
+                    </div>
+                    <div class="inputbox">
+                        <span>card number:</span>
+                        <input type="number" class="cardNumber" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputbox">
+                        <span>exp month:</span>
+                        <input type="text" class="expMonth" placeholder="January">
+                    </div>
+                    <div class="flex">
+                        <div class="inputbox">
+                            <span>exp year:</span>
+                            <input type="number" class="expYear" placeholder="2023">
+                        </div>
+                        <div class="inputbox">
+                            <span>CVV:</span>
+                            <input type="number" class="cvv" placeholder="1234">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="button" value="Make payment" class="submit-btn" onclick="makePaymenyClicked()">
+        </form>
+    </div>
+    <footer>
+        <div><a href="PageEditor.html" target="_blank">Page Editor</a></div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squash</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/squash.css">
+</head>
+<body>
+    <header>
+        <img class="home-logo-img" src="images/LOGOEdited.png" alt="HomePageLogo" > 
+         <div class="homeLogo">Rackets Asia</div>
+         <div class="mainLine">
+             <div class="line"></div>
+             <div class="line"></div>
+             <div class="line"></div>
+         </div>
+         <nav class="navigation-bar">
+         <ul>
+             <li><a class = "activeTab" href="#">Home</a></li>
+             <li><a href="#">Presentation</a></li>
+             <li><a href="#">Products</a></li>
+             <li><a href="#">Content</a></li>
+             <li><a href="#">Sitemap</a></li>
+             <li><a href="#">Quiz</a></li>
+             <li><a href="#">Gallery</a></li>
+             <li><a href="#">Student Details</a></li>
+             <li><a href="#">Comments</a></li>
+         </ul>         
+         </nav>
+     </header>
+
+     <script>
+        mainLine = document.querySelector(".mainLine");
+        mainLine.onclick = function(){
+            navBar = document.querySelector("nav");
+            navBar.classList.toggle("active");
+        }
+
+    </script>
+    <h1>Squash</h1>
+    <div class="line"></div><br>
+    <ul>
+        <li class="list"><a href="#intro">Introduction to Squash</a></li>
+        <li class="list"><a href="#court">Squash Court</a></li>
+        <li class="list"><a href="#racket">Squash Racket and Ball</a></li>
+        <li class="list"><a href="#play">How to play squash</a></li><br>
+    </ul>
+    <h3 id="intro">Introduction to Squash</h3>
+    <div class="content-line"></div>
+    <img src="images/squash.jpg" alt="squash">
+    <p>Invented in England in the early 19th century, squash has rapidly gained popularity among both enthusiasts and professionals.</p>
+    <p>Though not an Olympic sport yet, squash has been a part of the Asian Games since 1986 and the Commonwealth Games since 1998. Big-ticket dedicated tournaments like the World Squash Championships have also been around since the mid-1970s.</p>
+    <p>Like tennis, squash is also a racket and ball sport but the dynamics of squash differ considerably from its cousin.</p>
+    
+    <h3 id="court">Squash court</h3>
+    <div class="content-line"></div>
+    <img src="images/squashCourt.jpg" alt="squash court">
+    <p>A squash court is typically a rectangular surface (9.75mx6.4m in dimension for singles and 13.72mx7.62m for doubles) enclosed by four walls. The wall at the back is called the back wall while the one on the front is called the front wall. The two walls on either side are side walls.</p>
+    <p>A short line is drawn parallel to the back wall dividing the playing surface into two parts. For singles, the short line is 4.26m away from the back wall while the distance is 4.57m for a doubles squash court.</p>
+    <p>A service line and an out line are also drawn on the front wall at a height of 1.78m and 4.57m from the floor, respectively. The out line of the back wall, meanwhile, is at a height of 2.13m from the floor and hence the out lines along the side walls which connect the out lines of the front and back walls are slightly inclined.</p>
+    
+    <h3 id="racket">Squash racket and balls</h3>
+    <div class="content-line"></div>
+    <img src="images/squashRacketAndBall.jpg" alt="squashRacketAndBall">
+    <p>Squash rackets are somewhat similar to tennis rackets but differ slightly in shape. Rackets used for squash are 686mm long and 215mm wide. The maximum hitting area (surface with interwoven strings) permissible is 500sqcm. The maximum permitted weight is 255 gm but commonly players use rackets weighing from 90 and 150gm.</p>
+    <p>There are different types of racket balls, marked by coloured dots, with varying density, bounce and speed which affects play.</p>
+    <p>Various balls are used depending on the level of competition but in the highest tier international tournaments, double yellow dot balls with very low speed or hang time are normally used.</p>
+
+    <h3 id="play">How to play squash</h3>
+    <div class="content-line"></div>
+    <p>Similar to other racket sports like tennis and badminton, the core objective in squash is to make the opponent miss their shot to earn points.</p>
+    <p>A squash match starts with a coin toss or a racket spin (the racket is spun with two players/teams standing in opposite directions. The direction in which the racket falls after its spinning motion determines the winner). The winner can decide to serve or receive.</p>
+    <p>The play starts with a serve. The serving player can choose any one of the service boxes for their first serve. The opposing player takes their stance on the opposite side of the half-court line but behind the short line.</p>
+    <p>During a serve, a player must have one of his feet planted inside the service box, without touching the lines, until the ball is hit. The serve must hit the front wall between the service line and out line and land on the opposite side of the court between the back wall and the half-court line. The receiving player, however, can opt to volley the serve before it lands on the floor after it has hit the front wall.</p>
+    <p>Players only get one shot at a serve in squash and failure to land a legal serve results in a point to the opposition. Service only changes hands if the server loses a point. A player can continue to serve by alternating between service boxes after each serve as long as they keep winning.</p>
+</body>
+<footer>
+    <div><a href="PageEditor.html" target="_blank">Page Editor</a></div>
+</footer>
+</html>
